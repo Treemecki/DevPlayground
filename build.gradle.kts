@@ -24,6 +24,8 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
 
+    implementation("io.vavr:vavr:0.10.3")
+
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
 
     implementation("org.kodein.di:kodein-di-generic-jvm:$kodeinVersion")

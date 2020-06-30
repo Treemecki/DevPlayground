@@ -13,7 +13,7 @@ public class RecursionTests {
         final int iterations = 2000;
         final String repeaterData = new DataRepeater().create("abc", iterations);
         final String dataToCompare = String.join("", Collections.nCopies(iterations, "abc"));
-        Assertions.assertTrue(repeaterData.equals(dataToCompare));
+        Assertions.assertEquals(dataToCompare, repeaterData);
     }
 
 }

@@ -9,10 +9,8 @@ class DependencyInjectionTests {
 
     @Test
     fun kodeinDependencyInjectionTest() {
-        val andrewInfo = buildDataDecorator("AndrewConst")
-            .decorate()
-        val johnInfo = buildDataDecorator("JohnConst")
-            .decorate()
+        val andrewInfo = buildDataDecorator("AndrewConst").decorate()
+        val johnInfo = buildDataDecorator("JohnConst").decorate()
         assertAll(
             "dependencyInjection",
             { Assertions.assertTrue(andrewInfo == "> Andrew: Hello") },
